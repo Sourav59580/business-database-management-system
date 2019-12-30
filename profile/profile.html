@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>profile</title>
+    <!--css link coding-->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fascinate&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="profile-bag">
+        <div class="profile-container">
+            <p style="position:absolute;top:7%;right:150px;font-family: 'Kaushan Script', cursive;">We keep
+                everything</p>
+            <h2 style="position:absolute;top:12%;right:140px;font-family: 'Righteous', cursive;">Ready to go</h2>
+            <img src="../images/Wave.png" width="520px" height="480px">
+            <div id="upload-container">
+                <i class="fa fa-upload" id="i">Upload photo</i>
+                <input type="file" accept="image/*" id="profile-pic-upload" onchange="upload_pic()">
+            </div>
+            <h1 id="welcome"></h1>
+            <i class="fa fa-forward" id="next-btn" title="next"></i>
+        </div>
+    </div>
+
+    <!--profile interface coding-->
+    <div id="profileInterfaceContainer">
+        <div id="profileInterfaceHeader">
+            <h1 style="position: absolute;margin-left:40%;color: white;top:30px;" id="profilename"></h1>
+            <div id="profileInterfaceDp"></div>
+        </div>
+        <div id="profileInterfaceBody">
+            <ul id="app-menu">
+                <li><a href="#"><i class="fa fa-briefcase" style="font-size:30px; color:black;">
+                        </i><br>Bussiness</a></li>
+                <li><a href="about.html"><i class="fa fa-pencil" style="font-size:30px; color:black;">
+                        </i><br>About</a></li>
+
+                <li><a href="pages/contact.html"><i class="fa fa-phone" style="font-size:30px; color:black;">
+                        </i><br>Contact</a></li>
+
+                <li><a href="#"><i class="fa fa-play" style="font-size:30px; color:black;">
+                        </i><br>Playlist</a></li>
+
+                <li onclick="logout()"><a href="#"><i class="fa fa-sign-out" style="font-size:30px; color:black;">
+                        </i><br>Logout</a></li>
+
+            </ul>
+            <h1 id="profile-notice">Please wait....</h1>
+
+        </div>
+        <div id="profileInterfaceFooter">
+            <img src="../images/logo.png" width="100%" id="profileInterfaceLogo">
+            <h1 style="color:white;font-family:'Fascinate', cursive; float: left;font-size:20px;">SAFE_DOC</h1>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="script/welcome.js"></script>
+</body>
+
+</html>

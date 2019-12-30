@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta name="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--css file link-->
+    <link rel="stylesheet" href="style/animated.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fascinate&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--js file link-->
+    <!--noscript coding-->
+    <noscript>
+        <h1>Please enable your java script</h1>
+        <style>
+            h1 {
+                color: white;
+                font-size: 80px;
+                text-align: center;
+            }
+
+            body {
+                background-color: black;
+            }
+
+            #webpage {
+                display: none;
+            }
+        </style>
+
+
+
+
+
+
+
+
+
+
+    </noscript>
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <div id="webpage">
+        <!--siite intro coding-->
+        <div id="site-intro">
+            <center>
+                <img src="images/logo.png" width="120px;">
+                <h1 id="app-name">SAFE DOC</h1>
+                <i class="fa fa-play-circle-o animated infinite swing" style="font-size:50px;cursor:pointer;"
+                    onclick="lside_bar()"></i>
+            </center>
+        </div>
+        <!--left sidebar coding-->
+        <div id="lsidebar" class="animated slideInLeft">
+
+            <i class="fa fa-close" style="background-color:black;color:white;padding:5px;float:right;cursor: pointer;"
+                id="rslider-close" onclick="lclose()"></i>
+
+            <h1 style="text-align:center; color:white;">Signup User !</h1>
+
+            <form id="signup" onsubmit="return signup()">
+                <input type="text" name="name" placeholder="&#xf2bd; Your name" id="name" required>
+
+                <input type="email" name="email" placeholder="&#xf0e0; Email id" id="email" required
+                    onchange="usercheck()" class="animated">
+
+                <span id="user_exist"
+                    style="color:white;font-weight:bold;font-family:sans-serif;display: block;margin-top:-10px;"></span><br>
+                <input type="password" name="password" placeholder="&#xf023; Password" id="password" required>
+                <input type="number" name="mobile" placeholder="&#xf095; Phone number" id="mobile" required>
+                <span id="signup_success" style="color:white;font-weight:bold;font-family:sans-serif;"></span>
+                <input type="submit" value="signup" id="submit"><br><br><br>
+            </form>
+            <p style="color:gray;">Already have a account ?<a style="text-decoration:none;color:white;cursor:pointer;"
+                    onclick="rside_bar()"> Log in</a></p>
+        </div>
+        <!--right slider coding-->
+        <div id="rsidebar" class="animated slideInRight">
+            <i class="fa fa-close" style="background-color:black;color:white;padding:5px;float:left;cursor: pointer;"
+                id="lslider-close" onclick="rclose()"></i>
+            <h1 style="text-align:center; color:white;">Login User !</h1>
+            <form id="login" onsubmit="return login()">
+                <input type="email" name="email" placeholder="&#xf0e0; Email id" id="login-user" required>
+                <input type="password" name="password" placeholder="&#xf023; Password" id="login-password" required>
+                <input type="submit" value="login">
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <!--js file link-->
+    <script src="script/script.js" type="text/javascript"></script>
+    <script src="script/signup&login.js" type="text/javascript"></script>
+</body>
+
+
+</html>

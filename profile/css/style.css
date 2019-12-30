@@ -1,0 +1,157 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#profile-bag {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
+
+.profile-container {
+    width: 820px;
+    height: 480px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding-right: 10px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+}
+
+#upload-container {
+    width: 150px;
+    height: 150px;
+    float: right;
+    margin-right: 120px;
+    margin-top: 15%;
+    border: 1px solid #ccc;
+    position: relative;
+    border-radius: 50%;
+}
+
+#upload-container input {
+    width: 100%;
+    height: 150px;
+    cursor: pointer;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+
+#i {
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: rgb(42, 42, 245);
+
+}
+
+#welcome {
+    font-family: 'Righteous', cursive;
+    font-size: 50px;
+    color: #FF7466;
+    
+    position: absolute;
+    right: 50px;
+    top: 50%;
+
+}
+
+#next-btn {
+    font-size: 50px;
+    color: #FF7466;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+    text-shadow: 0px 0px 3px #ddd;
+    cursor: pointer;
+}
+
+#profileInterfaceContainer {
+    width: 100%;
+    height: 100vh;
+    float: left;
+}
+
+#profileInterfaceHeader {
+    width: 100%;
+    height: 200px;
+    background-color: #FF7466;
+
+}
+
+#profileInterfaceDp {
+    width: 150px;
+    height: 150px;
+    margin-left: 40%;
+    position: absolute;
+    margin-top: 120px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
+
+#profileInterfaceBody {
+    width: 100%;
+    height: 320px;
+    text-align: center;
+    border: 1px solid #FF7466;
+}
+
+#profileInterfaceBodyIcon {
+    margin-left: 20%;
+    margin-top: 10%;
+}
+
+#app-menu {
+    margin-top: 140px;
+    margin-left: 60px;
+}
+
+#app-menu li {
+    width: 90px;
+    height: 70px;
+    padding: 10px;
+    list-style: none;
+    float: left;
+    margin-left: 100px;
+    box-shadow: 0px 0px 5px #ccc;
+
+
+}
+
+#profile-notice {
+    margin-top: 250px;
+    display: none;
+
+}
+
+#app-menu a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+#profileInterfaceFooter {
+    width: 100%;
+    height: 60px;
+    padding: 4px;
+    background-color: #FF7466;
+}
+
+#profileInterfaceFooter img {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-left: 40%;
+}

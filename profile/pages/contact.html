@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style/contact.css">
+    <link rel="stylesheet" href="style/animated.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="contact-page">
+        <!--start header coding-->
+        <header>
+            <img src="../../images/triangle.png">
+            <div id="contact-photo"></div>
+        </header>
+        <!--end header coding-->
+        <!--start form coding-->
+        <h1 style="text-align: center;font-family:sans-serif;color:turquoise;font-size:50px;">Private Contacts</h1>
+        <div id="add-contact">
+            <form id="add-form">
+                <input type="text" name="name" id="fullname" placeholder="Full name">
+                <br><br>
+                <input type="text" name="Primarynumber" id="fnumber" placeholder="Primary number">
+                <span id="pnumber-notice" style="color: red;margin-left:40px; display:none;">Enter a valid
+                    number...</span>
+                <br><br>
+                <input type="text" name="Secondarynumber" id="snumber" placeholder="Secondary number">
+                <span id="snumber-notice" style="color: red;margin-left:40px; display:none;">Enter a valid
+                    number...</span>
+                <br><br>
+                <input type="button" value="Add" onclick="add_contacts()">
+                <input type="button" value="show" onclick="open_sidebar()">
+                <center><span style="font-size:25px;color:red;display:none;" id="successNotice">Successfully saved
+                        !</span></center>
+
+            </form>
+        </div>
+        <!--end form coding-->
+        <!--start sidebar coding-->
+        <div id="sidebar-contactlist" class="animated">
+            <i class="fa fa-window-close" style="float:left;color:yellow;font-size:20px;cursor: pointer;"
+                onclick="close_sidebar()"></i>
+            <center>
+                <h1 id="head" style="color:red;font-family:sans-serif">Contact List</h1>
+            </center>
+            <form style="margin-bottom:10px;">
+                <input type="search" placeholder="Search contact" style="padding:10px;">
+            </form>
+            <div id="contacts">
+
+
+
+            </div>
+        </div>
+        <!--end sidebar coding-->
+        <!--start footer coding-->
+        <div id="contact-footer" style="text-align: center;padding:20px;margin-bottom:10px;">
+            <a style="font-size:20px;cursor: pointer;color:black;" href="../profile.html"><i class="fa fa-sign-out"> Logout</i></a>
+            <a style="font-size:20px;margin-left:40px;cursor: pointer;"><i class="fa fa-refresh"> Restore
+                    Contacts</i></a>
+        </div>
+        <span style="font-family:sans-serif;font-size:30px;margin-left:40%;display:none;" id="contact-notice">Please
+            wait....</span>
+        <!--end footer coding-->
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script/contact.js"></script>
+</body>
+
+</html>

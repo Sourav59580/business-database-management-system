@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+#site-intro {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#site-intro img {
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-shadow: 0px 0px 10px #ddd;
+}
+
+#app-name {
+    font-family: 'Fascinate', cursive;
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    color: #FF7466;
+}
+
+#lsidebar {
+    width: 320px;
+    float: left;
+    z-index: 1000;
+    padding:20px;
+    position:absolute;
+    display:block;
+    background-color: #FF7466;
+    box-shadow:0px 0px 10px #ddd;
+    height: 100vh;
+}
+#rsidebar{
+    width:320px;
+    height:100vh;
+    float: right;
+    z-index:1000;
+    padding:20px;
+    display:none;
+    background-color:#FF7466;
+    box-shadow:0px 0px 10px #ddd;
+    
+}
+#lsidebar input[type='text'],[type='password'],[type='email'],[type='number']{
+  width:100%;
+  padding:13px;
+  border:none;
+  margin-bottom:25px;
+  outline:none;
+}
+
+#lsidebar input[type='text'],[type='password'],[type='email'],[type='number']::placeholder{
+ font-family: fontAwesome;
+ font-size:18px;
+ color: gray;
+}
+#lsidebar input[type='submit']{
+    width:80px;
+    height:40px;
+    border:none;
+    float:right;
+    border-radius:4px;
+    outline:none;
+    font-size:15px;
+    background-color:#fff;
+}
+#rsidebar input[type='text'],[type='password'],[type='email'],[type='number']{
+  width:100%;
+  padding:13px;
+  border:none;
+  margin-bottom:25px;
+  outline:none;
+}
+
+#rsidebar input[type='text'],[type='password'],[type='email'],[type='number']::placeholder{
+ font-family: fontAwesome;
+ font-size:18px;
+ color: gray;
+}
+#rsidebar input[type='submit']{
+    width:80px;
+    height:40px;
+    border:none;
+    float:right;
+    border-radius:4px;
+    outline:none;
+    font-size:15px;
+    background-color:#fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
